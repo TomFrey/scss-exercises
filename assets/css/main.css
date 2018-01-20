@@ -143,3 +143,17 @@ table {
   left: 240px;
   top: 60px;
   position: absolute; }
+
+footer .bottomText {
+  clear: both; }
+
+footer .bottomText {
+  color: red; }
+
+footer .floatingBox {
+  background-color: #646464;
+  float: left;
+  height: 30px;
+  margin: 3px;
+  text-align: center;
+  width: 150px; }

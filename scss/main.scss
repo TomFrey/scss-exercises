@@ -185,3 +185,27 @@
   position: absolute;
 }
 
+
+
+////////////////// Exercise 4 ///////////////////
+%clearfix {   //placeholder
+  clear: both;
+}
+
+footer{
+  .bottomText {
+    @extend %clearfix;
+    color: red;
+  }
+
+  .floatingBox{
+    background-color: rgb(100,100,100);
+    float: left;
+    height: 30px;
+    margin: 3px;
+    text-align: center;
+    width: 150px;
+  }
+}
+
+
