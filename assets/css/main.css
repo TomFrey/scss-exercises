@@ -106,3 +106,40 @@ table {
       flex: 7 7 70%; }
     .wrapper aside {
       flex: 3 3 30%; } }
+
+.awesome-triangle1 {
+  border-right: 30px solid red;
+  border-bottom: 30px solid transparent;
+  border-top: 30px solid transparent;
+  height: 0;
+  width: 0;
+  left: 200px;
+  position: absolute; }
+
+.awesome-triangle2 {
+  border-left: 30px solid red;
+  border-bottom: 30px solid transparent;
+  border-top: 30px solid transparent;
+  height: 0;
+  width: 0;
+  left: 290px;
+  position: absolute; }
+
+.awesome-triangle3 {
+  border-bottom: 20px solid blue;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  height: 0;
+  width: 0;
+  left: 240px;
+  position: absolute; }
+
+.awesome-triangle4 {
+  border-top: 20px solid blue;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  height: 0;
+  width: 0;
+  left: 240px;
+  top: 60px;
+  position: absolute; }

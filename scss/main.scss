@@ -136,6 +136,52 @@
 
 
 
+////////////////// Exercise 3 ///////////////////
+// https://css- tricks.com/snippets/css/css-triangle/
+@mixin triangle ($direction, $color, $size) {
+  @if $direction == 'up' {
+    border-bottom: $size solid $color;
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+  }
+  @if $direction == 'down' {
+    border-top: $size solid $color;
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+  }
+  @if $direction == 'left' {
+    border-right: $size solid $color;
+    border-bottom: $size solid transparent;
+    border-top: $size solid transparent;
+  }
+  @if $direction == 'right' {
+    border-left: $size solid $color;
+    border-bottom: $size solid transparent;
+    border-top: $size solid transparent;
+  }
+  height: 0;
+  width: 0;
+}
 
-
+.awesome-triangle1 {
+  @include triangle(left, red, 30px);
+  left: 200px;
+  position: absolute;
+}
+.awesome-triangle2 {
+  @include triangle(right, red, 30px);
+  left: 290px;
+  position: absolute;
+}
+.awesome-triangle3 {
+  @include triangle(up, blue, 20px);
+  left: 240px;
+  position: absolute;
+}
+.awesome-triangle4 {
+  @include triangle(down, blue, 20px);
+  left: 240px;
+  top: 60px;
+  position: absolute;
+}
 
